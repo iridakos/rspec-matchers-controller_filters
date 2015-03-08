@@ -25,7 +25,7 @@ In your controller specs you may use the new matchers:
 
 ```ruby
 it { should execute_before_filter :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
-it { should_not execute_after_filter :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
+it { should_not execute_around_filter :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
 it { should execute_after_filter :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
 ```
 
