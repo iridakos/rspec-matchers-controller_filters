@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Lazarus Lazaridis']
   spec.summary       = 'Test execution of before/around/after filters with RSpec'
   spec.description   = 'This gem defines custom filters that can be used to test execution of filters before, around or after controller actions.'
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/iridakos/rspec-matchers-controller_filters'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")

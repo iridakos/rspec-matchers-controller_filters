@@ -1,4 +1,5 @@
 require 'rspec/matchers/controller_filters/version'
+require 'rspec/matchers'
 
 module RSpec
   module Matchers
@@ -8,7 +9,7 @@ module RSpec
       end
 
       # Support for Rails 3, 4
-      ROUTING_ERROR_CLASS = defined?(ActionController::UrlGenerationError) ? ActionController::UrlGenerationError : ActionController::RoutingError
+      ROUTING_ERROR_CLASS = defined?(ActionController::UrlGenerationError) ? ActionController::UrlGenerationError : (defined?(ActionController::RoutingError) ? ActionController::RoutingError : StandardError )
 
       class << self
         # Resolves the error message to show for a failing test.
