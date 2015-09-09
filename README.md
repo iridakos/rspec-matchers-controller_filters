@@ -46,4 +46,4 @@ This is my first gem so please:
 1. Use it at your own risk
 2. Any feedback is welcome!
 
-##### [**Lazarus Lazaridis**](http://twitter.com/arubystory)
+##### [**Lazarus Lazaridis**](https://www.linkedin.com/in/lazaruslazaridis)
