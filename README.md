@@ -26,9 +26,9 @@ Or install it yourself as:
 In your controller specs you may use the new matchers:
 
 ```ruby
-it { should execute_before_filter :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
-it { should_not execute_around_filter :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
-it { should execute_after_filter :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
+it { should execute_before_action :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
+it { should_not execute_around_action :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
+it { should execute_after_action :your_filter, :on => :your_action, :with => { :parameter_name => 'parameter_value'} }
 ```
 
 The **with** parameter is optional.
@@ -41,9 +41,6 @@ The **with** parameter is optional.
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
-## Important note
-This is my first gem so please:
-1. Use it at your own risk
-2. Any feedback is welcome!
+## License
 
-##### [**Lazarus Lazaridis**](https://www.linkedin.com/in/lazaruslazaridis)
+This gem is open source under the [MIT License](https://opensource.org/licenses/MIT) terms.
