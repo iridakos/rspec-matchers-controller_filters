@@ -169,11 +169,11 @@ module RSpec
 
           send(options[:via] || :get, options[:on], options[:with])
           @filter_executed && @action_executed
-        rescue ROUTING_ERROR_CLASS
-          @routing_error = true
-          negated
         rescue RSpec::Matchers::ControllerFilters::FilterFailureError
           false
+        rescue ROUTING_ERROR_CLASS => e
+          @routing_error = e.message
+          negated
         rescue => e
           @unexpected_error = e.message
           negated
