@@ -1,4 +1,4 @@
-# Rspec::Matchers::ControllerFilters
+# Rspec::Matchers::ControllerFilters [![Gem Version](https://badge.fury.io/rb/rspec-matchers-controller_filters.png)](https://badge.fury.io/rb/rspec-matchers-controller_filters) [![Build Status](https://travis-ci.org/iridakos/rspec-matchers-controller_filters.svg?branch=master)](https://travis-ci.org/iridakos/rspec-matchers-controller_filters)
 
 Use this gem to test the execution of before/around/after filters of your controller actions with RSpec.
 
