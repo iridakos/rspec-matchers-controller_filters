@@ -1,6 +1,6 @@
 # Rspec::Matchers::ControllerFilters
 
-Use this gem to test execution of before/around/after filters of controller actions with RSpec.
+Use this gem to test the execution of before/around/after filters of your controller actions with RSpec.
 
 Here's the general idea of the gem:
 http://www.arubystory.com/2014/10/testing-execution-of-beforefilter-with.html
