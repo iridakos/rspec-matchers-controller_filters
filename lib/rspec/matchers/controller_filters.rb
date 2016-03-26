@@ -99,6 +99,7 @@ module RSpec
           RSpec::Matchers::ControllerFilters.resolve_failure_message :before, actual, expected, @routing_error, @unexpected_error, true
         end
       end
+      RSpec::Matchers.alias_matcher :execute_before_action, :execute_before_filter
 
       RSpec::Matchers.define :execute_after_filter do |filter_name, options = {}|
         match do |controller|
@@ -143,6 +144,7 @@ module RSpec
           RSpec::Matchers::ControllerFilters.resolve_failure_message :after, actual, expected, @routing_error, @unexpected_error, true
         end
       end
+      RSpec::Matchers.alias_matcher :execute_after_action, :execute_after_filter
 
       RSpec::Matchers.define :execute_around_filter do |filter_name, options = {}|
         match do |controller|
@@ -187,6 +189,7 @@ module RSpec
           RSpec::Matchers::ControllerFilters.resolve_failure_message :around, actual, expected, @routing_error, @unexpected_error, true
         end
       end
+      RSpec::Matchers.alias_matcher :execute_around_action, :execute_around_filter
     end
   end
 end
