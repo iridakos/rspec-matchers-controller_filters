@@ -2,8 +2,8 @@
 
 Use this gem to test the execution of before/around/after filters of your controller actions with RSpec.
 
-Here's the general idea of the gem:
-http://www.arubystory.com/2014/10/testing-execution-of-beforefilter-with.html
+Here's a post describing the general idea of the gem:
+[https://iridakos.com/how-to/2014/10/14/testing-execution-of-filters-with-rspec.html](https://iridakos.com/how-to/2014/10/14/testing-execution-of-filters-with-rspec.html)
 
 ## Installation
 
